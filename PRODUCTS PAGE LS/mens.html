@@ -35,8 +35,9 @@
 </head>
 <body>
    <div id="navbar">
-     <div><a href="womens.html" target="-blank">Womens cart</a></div>
-     <div> <a href="mens.html" target="_blank">Mens Cart</a></div>
+     <div><a href="womens.html">Womens cart</a></div>
+     <div> <a href="mens.html">Mens Cart</a></div>
+     <div><a href="cart.html">Cart</a> </div>
    </div>
     <h1 id="heading">Mens Page</h1>
     <div id="menCont"></div>
@@ -316,23 +317,18 @@ mensData.forEach(function(elem){
    Price.innerText=elem.price;
    var SO = document.createElement("P");
    SO.innerText=elem.strikedoffprice;
-   var btn = document.createElement("button").innerText="Add to Cart"
+   var btn = document.createElement("button")
+   btn.innerText="Add to Cart"
   
-   //btn.addEventListener("click",myf)
+ 
     
    box.append(image,Name,Price,SO,btn);
   console.log(box);
    var Men = document.querySelector("#menCont");
   Men.append(box);
-// console.log(Men);
-//btn.setAttribute("butn","button")
+
 })
-//var btn =  document.createElement("button").innerText="Add to Cart"
-// function myf()
-//  {
-//     event.target.parentNode.remove();
-//     event.target.parentNode.HTML=""
-//  }
+
 
 
 
